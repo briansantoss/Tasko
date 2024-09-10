@@ -16,7 +16,9 @@ O ***Tasko*** faz extensivouso das ferramentas do framework [Django](https://www
 
 Pode começar a instalação de fato abrindo algum shell que tenha ao seu dispor para uso, caso esteja usando a plataforma Windows, indicamos fortemente o uso do **PowerShell**, caso esteja fazendo uso de uma plataforma Linux, sugirimos o **Bash** (shell padrão em muitas das distribuições) ou o **Zsh** e digitando, no diretório/pasta onde deseja ter o projeto, o seguinte comando:
 
-`git clone https://github.com/briansantoss/Tasko.git`
+```
+git clone https://github.com/briansantoss/Tasko.git
+```
 
 Não tente rodar nada ainda, não temos o Django, que, como antetiormente referido, é indispensável para o bom funcionamento do ***Tasko***. Feito isso, estamos habilitados a partir para a instalação do Python, segue o link para download abaixo:
 
