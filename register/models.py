@@ -1,10 +1,10 @@
 from django.db import models
 
-# Create your models here.
+# Definindo a estrutura da tabela dos usuários no banco de dados
+# Campos: id, nome e senha
 
 
 class Users(models.Model):
     id = models.AutoField(primary_key=True)
-    nome = models.CharField(max_length=100)
-    email = models.EmailField()
-    senha = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, blank=False, null=False)
+    passwd = models.CharField(max_length=100, blank=False, null=False)
