@@ -1,3 +1,5 @@
-/.idea/
-/(ve|e)nv/
-/db.sqlite3/
+.idea/
+db.sqlite3
+__pycache__/
+venv/
+env/
