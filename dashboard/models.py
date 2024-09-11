@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Definindo a estrutura da tabela dos usuários no banco de dados
@@ -12,3 +13,4 @@ class Tasks(models.Model):
     title = models.CharField(max_length=100, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
     status = models.CharField(max_length=100, choices=CHOICES, default='em_andamento', null=False)
+    username = models.ForeignKey(User, on_delete=models.CASCADE)

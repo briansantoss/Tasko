@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Register - Tasko</title>
-
     <style>
         body{
             height: 98vh;
@@ -42,8 +41,6 @@
             color: white;
             cursor: pointer;
         }
-
-
     </style>
 </head>
 <body>
@@ -55,7 +52,11 @@
             <input type="password" placeholder="Senha" name ="senha" required>
             <input type="submit" value="Cadastrar">
         </form>
-
     </div>
+    <script>
+        {% if usuario_existe %}
+            alert("Esse usuário já se encontra cadastrado em nosso sistema")
+        {% endif %}
+    </script>
 </body>
 </html>

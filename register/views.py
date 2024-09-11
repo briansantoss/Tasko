@@ -13,11 +13,11 @@ def register(request):
         user = User.objects.filter(username=username).first()
 
         if user:
-            return HttpResponse("O nome Inserido já consta  na base de dados!")
+            return render(request, 'register/register.html', {'usuario_existe': True})
 
         user = User.objects.create_user(username=username, email=email, password=senha)
         user.save()
 
-        return HttpResponse("cadastro feito")
+        return render(request, 'login/login.html')
 
 

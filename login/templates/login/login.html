@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Login - Tasko</title>
-
     <style>
         body{
             height: 98vh;
@@ -42,8 +41,6 @@
             color: white;
             cursor: pointer;
         }
-
-
     </style>
 </head>
 <body>
@@ -54,7 +51,11 @@
             <input type="password" placeholder="Senha" name ="senha" required>
             <input type="submit" value="Entrar">
         </form>
-
     </div>
+    <script>
+        {% if erro_login %}
+            alert('Nome de usuário ou senha incorretos. Tente novamente')
+        {% endif %}
+    </script>
 </body>
 </html>

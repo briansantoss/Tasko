@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
@@ -18,4 +17,4 @@ def login(request):
 
             return render(request, 'dashboard/dashboard.html')
         else:
-            return HttpResponse('FALHA NO LOGIN')
+            return render(request, 'login/login.html', {'erro_login': True})
