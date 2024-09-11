@@ -46,7 +46,8 @@
 <body>
     <div class="container">
         <h2>CADASTRO</h2>
-        <form action="{% url 'register' %}" method="POST">{% csrf_token %}
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
             <input type="text" placeholder="Nome" name ="username" required>
             <input type="email" placeholder="Email" name ="email" required>
             <input type="password" placeholder="Senha" name ="senha" required>

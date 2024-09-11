@@ -1,7 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth.models import User
+
 # Create your views here.
+
+
 def register(request):
     if request.method == "GET":
         return render(request, 'register/register.html')
@@ -19,5 +21,3 @@ def register(request):
         user.save()
 
         return render(request, 'login/login.html')
-
-
