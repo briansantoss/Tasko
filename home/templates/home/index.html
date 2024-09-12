@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{% static "global.css" %}">
+    <link rel="stylesheet" href="{% static 'global.css' %}">
 </head>
 <body>
     <header class="header">
         <h1>TASKO</h1>
         <nav class="navbar">
-            <a href="registro.html" aria-label="Página de Registro">REGISTRO</a>
-            <a href="cadastro.html" aria-label="Página de Cadastro">CADASTRO</a>
+            <a href="{% url 'register' %}" aria-label="Página de Registro">REGISTRO</a>
+            <a href="{% url 'login' %}" aria-label="Página de Cadastro">CADASTRO</a>
         </nav>
     </header>
     <main class="content">
