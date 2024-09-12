@@ -14,7 +14,6 @@ def login(request):
 
         if user:
             login_django(request, user)
-
             return render(request, 'dashboard/dashboard.html')
         else:
             return render(request, 'login/login.html', {'erro_login': True})
