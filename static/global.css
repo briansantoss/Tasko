@@ -1,28 +1,28 @@
-/* Estilo global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fonte e corpo */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
     color: #333;
 }
 
-/* Links */
 a {
     color: #004d99;
     text-decoration: none;
+}
+
+.header h1 {
+    font-size: 2.5em;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     justify-content: space-between;
@@ -33,24 +33,19 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
-    font-size: 2.5em;
-}
-
-/* Menu de navegação */
 .navbar {
     display: flex;
     gap: 15px;
 }
 
 .navbar a {
-    color: #fff;
+    color: #004d99;
     font-size: 1.2em;
     line-height: 1.6;
     padding: 10px 15px;
     border-radius: 5px;
     border: 2px solid transparent;
-    background-color: #004d99;
+    background-color: #fff;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -69,18 +64,12 @@ a:hover {
     opacity: 0;
 }
 
-.navbar a:hover::before {
-    opacity: 1;
-}
-
 .navbar a:hover {
-    background-color: #003366;
-    border-color: #fff;
+    background-color: #fff;
 }
 
-/* Conteúdo */
 .content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 18px auto;
     padding: 20px;
     background-color: #fff;
@@ -95,17 +84,6 @@ a:hover {
     color: #004d99;
 }
 
-/* Estilo para texto e títulos em código */
-code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #f4f4f4;
-    padding: 5px 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    display: inline-block;
-    white-space: nowrap;
-}
-
 .info-section {
     display: flex;
     justify-content: space-between;
@@ -118,15 +96,8 @@ code {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.info-section .text {
-    flex: 1;
-    max-width: 600px;
-    text-align: left;
-}
-
-.info-section .image {
-    flex: 1;
-    max-width: 400px;
+p {
+    text-align: justify;
 }
 
 .info-section img {
@@ -136,14 +107,13 @@ code {
     display: block;
 }
 
-/* Nova seção */
 .additional-info {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #e0e4e8;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
 }
 
 .additional-info h3 {
@@ -157,45 +127,13 @@ code {
     line-height: 1.6;
 }
 
-/* Rodapé */
 .footer {
-    background-color: #004d99;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.footer p {
-    font-size: 1em;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-section .text, .info-section .image {
-        max-width: 100%;
-    }
-
-    .additional-info {
-        padding: 15px;
-        margin-top: 15px;
-    }
-}
 
