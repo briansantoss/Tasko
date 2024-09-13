@@ -2,6 +2,10 @@
 ## Menu de Navegação
 1. [Introdução](#rápida-introdução-)
 2. [Configurações](#configurando-o-ambiente-)
+   - [Clonando o repositório]([#clonando-o-repositório-)
+   - [Instalando (e configurando) o Pyhon](#instalando-e-configurando-o-python-)
+   - [Baixando dependendências](#baixando-as-dependências-)
+   - [Configurando o DB](#configurando-o-banco-de-dados-)
 3. [Uso](#usando-o-tasko-)
 
 ## Rápida introdução &#x1F9D0;
