@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-principal: #004d99;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
@@ -11,7 +15,7 @@ body {
 }
 
 a {
-    color: #004d99;
+    color: var(--cor-principal);;
     text-decoration: none;
 }
 
@@ -27,10 +31,20 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004d99;
-    color: #fff;
+    background-color: var(--cor-principal);;
+    color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header a:hover {
+    text-decoration: none;
 }
 
 .navbar {
@@ -39,13 +53,13 @@ a:hover {
 }
 
 .navbar a {
-    color: #004d99;
+    color: var(--cor-principal);;
     font-size: 1.2em;
     line-height: 1.6;
     padding: 10px 15px;
     border-radius: 5px;
     border: 2px solid transparent;
-    background-color: #fff;
+    background-color: white;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -56,7 +70,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 2px solid white;
     border-radius: 5px;
     box-sizing: border-box;
     pointer-events: none;
@@ -65,23 +79,23 @@ a:hover {
 }
 
 .navbar a:hover {
-    background-color: #fff;
+    background-color: white;
 }
 
 .content {
-    max-width: 800px;
+    max-width: 60%;
     margin: 18px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 30px 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
 .content h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #004d99;
+    color: var(--cor-principal);;
 }
 
 .info-section {
@@ -92,8 +106,9 @@ a:hover {
     flex-wrap: wrap;
     background-color: #e0e4e8;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px 20px 30px 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(0, 0, 0, 0.48);
 }
 
 p {
@@ -111,14 +126,15 @@ p {
     margin-top: 20px;
     padding: 20px;
     background-color: #e0e4e8;
-    border-radius: 8px;
+    border-radius: 40px 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.48);
 }
 
 .additional-info h3 {
     font-size: 1.8em;
-    color: #004d99;
+    color: var(--cor-principal);;
     margin-bottom: 15px;
 }
 
@@ -128,12 +144,10 @@ p {
 }
 
 .footer {
-    background-color: #ffffff;
-    color: #000;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 10px 0;
     bottom: 0;
     width: 100%;
 }
-
-

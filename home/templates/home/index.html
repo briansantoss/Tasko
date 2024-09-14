@@ -1,19 +1,22 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'logo-tasko.png' %}">
     <link rel="stylesheet" href="{% static 'global.css' %}">
 </head>
 <body>
     <header class="header">
-        <h1>TASKO</h1>
+        <h1>
+            <a href="{% url 'home' %}">TASKO</a>
+        </h1>
         <nav class="navbar">
-            <a href="{% url 'register' %}" aria-label="Página de Registro"><strong>REGISTRAR</strong></a>
             <a href="{% url 'login' %}" aria-label="Página de Login"><strong>ENTRAR</strong></a>
+            <a href="{% url 'register' %}" aria-label="Página de Registro"><strong>REGISTRAR</strong></a>
         </nav>
     </header>
     <main class="content">
@@ -36,7 +39,7 @@
         </section>
     </main>
     <footer class="footer">
-        &copy; 2024 TASKO.
+        &copy; 2024 Tasko. Todos os direitos reservados.
     </footer>
 </body>
 </html>
