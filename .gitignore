@@ -1,7 +1,8 @@
 # Adicionando arquivos desnecessários para o sistema versionamento (arquivos da IDE, ambiente virtual, banco de dados e arquivos binários resultantes de compilação)
 .idea/
 db.sqlite3
-__pycache__/
+**/tests.py
 */migrations/**
+__pycache__/
 *venv/
 *env/
