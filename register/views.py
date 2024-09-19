@@ -10,7 +10,7 @@ def register(request):
 
     username = request.POST.get('username')
     email = request.POST.get('email')
-    senha = request.POST.get('senha')
+    senha = request.POST.get('password')
 
     user = User.objects.filter(username=username).first()
 
